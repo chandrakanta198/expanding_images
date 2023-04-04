@@ -1,0 +1,49 @@
+.container{
+	display: flex;
+	width: 100%;
+}
+
+.one{
+	background: url(img/img1.jpg);
+}
+.two{
+	background: url(img/img2.jpg);
+}
+.three{
+	background: url(img/img3.jpg);
+}
+.four{
+	background: url(img/img4.jpg);
+}
+.five{
+	background: url(img/img5.jpg);
+}
+
+.section{
+    border-radius: 50px;
+	background-size: cover;
+	background-position: center;
+	height: 90vh;
+	cursor: pointer;
+	flex: 0.4;
+	margin:8px;
+	position: relative;
+	transition: all 0.4s linear;
+}
+
+.section h2 {
+  color: #f2e9ff;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.section:hover h2 {
+  opacity: 1;
+  bottom: 25px;
+}
+.section.active{
+	flex: 4;
+}
